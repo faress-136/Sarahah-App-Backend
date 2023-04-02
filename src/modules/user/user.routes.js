@@ -6,6 +6,7 @@ import { sigInSchema, signUpSchema, updatePasswordSchema } from './controller/us
 
 const router = express.Router()
 
+
 router.post("/signup", validation(signUpSchema), signup)
 
 router.post("/signin", validation(sigInSchema), signIn)
